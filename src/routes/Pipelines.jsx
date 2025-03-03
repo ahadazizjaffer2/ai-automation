@@ -33,7 +33,7 @@ const LeadCard = ({ name }) => {
 
 export default function Pipelines() {
   return (
-    <div className="pl-[130px] pt-[30px] bg-gray-100 min-h-screen overflow-x-auto flex justify-center">
+    <div className="pl-[10px] pt-[30px] bg-gray-100 min-h-screen overflow-x-auto flex justify-center">
       <div className="w-full max-w-[1600px]">
         <h1 className="text-3xl font-bold">Lead’s Pipeline</h1>
         <p className="text-gray-500 mb-6">Monitor the current stage of each lead in the sales process.</p>

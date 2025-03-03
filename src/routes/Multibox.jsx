@@ -12,7 +12,7 @@ const Inbox = () => {
   const [selectedTab, setSelectedTab] = useState("All Inboxes");
 
   return (
-    <div className="flex min-h-screen bg-gray-200 text-gray-400 pl-[120px] pt-[40px] pr-[120px]">
+    <div className="flex min-h-screen bg-gray-200 text-gray-400 pl-[10px] pt-[40px] pr-[120px]">
       {/* Sidebar */}
       <div className="w-[40%] p-6 border-r border-gray-300 bg-white rounded-2xl mr-6">
       <div className="mb-4 flex space-x-4">

@@ -113,7 +113,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Filters and actions */}
         <div className="flex justify-between mb-6">
           <div className="relative rounded-md shadow-sm w-64">

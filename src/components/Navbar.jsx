@@ -426,7 +426,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="border-b border-gray-200 bg-white w-full flex ">
-        <div className="max-w-7xl mx-auto px-2 ml-16 sm:px-3 lg:px-8 w-full">
+        <div className="max-w-9xl mx-auto px-2 ml-16 sm:px-3 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             
             {/* Left side - Logo */}

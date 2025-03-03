@@ -50,7 +50,7 @@ const Settings = () => {
     };
 
     return (
-        <div className="p-6 bg-gray-50 min-h-screen justify-center pl-[120px]">
+        <div className="p-6 bg-gray-50 min-h-screen justify-center ">
             {/* Navigation Tabs */}
             <div className="w-full max-w-3xl">
                 <div className="mb-8 border-b border-gray-300">

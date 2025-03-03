@@ -29,7 +29,7 @@ function Analytics() {
     const [selectedView, setSelectedView] = useState("month");
 
     return (
-        <div className="p-6 space-y-8 bg-gray-50 min-h-screen sm:px-8 md:px-16 lg:px-32 ps-20">
+        <div className="p-6 space-y-8 bg-gray-50 min-h-screen sm:px-8 md:px-16 lg:px-32 ">
             {/* Filter Buttons */}
             <div className="flex flex-wrap justify-between items-center gap-4">
                 <div className="flex rounded-full bg-gray-200 p-1">
