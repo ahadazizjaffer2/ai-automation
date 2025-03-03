@@ -46,7 +46,7 @@ function Calendar() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-4 ps-20">
+    <div className="max-w-7xl mx-auto p-4 ">
       <div className="space-y-6">
         {/* Header */}
         <div className="flex flex-col gap-2">
