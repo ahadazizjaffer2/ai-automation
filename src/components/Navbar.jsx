@@ -460,9 +460,9 @@ const Navbar = () => {
                     closeAllDropdowns();
                     setIsMenuOpen(!isMenuOpen);
                   }}
-                  className="p-2 border border-gray-300 text-gray-600 bg-gray-200 rounded-full cursor-pointer"
+                  className="p-1 md:p-2 border border-gray-300 text-gray-600 bg-gray-200 rounded-full cursor-pointer"
                 >
-                  <Menu />
+                  <Menu size={22} />
                 </button>
               </div>
 
@@ -474,9 +474,9 @@ const Navbar = () => {
                     closeAllDropdowns();
                     setIsNotificationOpen(!isNotificationOpen);
                   }}
-                  className="p-1.5 border border-gray-300 text-gray-600 bg-gray-200 rounded-full cursor-pointer flex gap-1 items-center"
+                  className="p-1 md:p-1.5 border border-gray-300 text-gray-600 bg-gray-200 rounded-full cursor-pointer flex gap-1 items-center"
                 >
-                  <Bell />
+                  <Bell size={22}/>
                 </button>
 
                 {isNotificationOpen && (
@@ -544,7 +544,7 @@ const Navbar = () => {
                     closeAllDropdowns();
                     setIsProfileOpen(!isProfileOpen);
                   }}
-                  className="p-1.5 border cursor-pointer border-gray-300 text-gray-600 bg-gray-200 rounded-full flex gap-1 items-center"
+                  className="p-1 md:p-1.5 border cursor-pointer border-gray-300 text-gray-600 bg-gray-200 rounded-full flex gap-1 items-center"
                 >
                   <User size={22} />
                 </button>
@@ -585,7 +585,7 @@ const Navbar = () => {
                   className="p-1.5 border border-gray-300 text-gray-600 rounded-full flex gap-1 items-center"
                 >
                   <span className='hidden md:block'>My Organization</span>
-                  <span className='block md:hidden'>Org...</span>
+                  <span className='block md:hidden text-sm'>Org</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
 
