@@ -92,7 +92,7 @@ function Analytics() {
             </div>
 
             {/* Chart Section */}
-            <div className="p-6 rounded-lg">
+            <div className="p-0 md:p-6 rounded-lg">
                 <div className="h-[300px] md:h-[400px] w-full">
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={data} margin={{ top: 20, right: 20, left: 0, bottom: 5 }}>
