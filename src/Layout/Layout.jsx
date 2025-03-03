@@ -9,7 +9,7 @@ function Layout() {
       <Sidebar />
       <div className="flex flex-col w-full">
         <Navbar />
-        <main className="p-2 md:p-4 pl-[60px] md:pl-[75px]">
+        <main className="p-2 md:p-4 pl-[40px] md:pl-[60px]">
           <Outlet />
         </main>
       </div>

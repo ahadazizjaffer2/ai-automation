@@ -23,16 +23,16 @@ function Sidebar() {
 
   return (
     <div
-      className={`fixed left-0 top-0 h-screen bg-zinc-900 text-white cursor-pointer transition-all duration-300 z-10 ease-in-out ${isExpanded ? "w-48" : "w-16"}`}
+      className={`fixed left-0 top-0 h-screen bg-zinc-900 text-white cursor-pointer transition-all duration-300 z-10 ease-in-out ${isExpanded ? "w-48" : "w-12 md:w-16"}`}
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
     >
-      <div className="p-4">
-        <p className={`flex items-center gap-2 overflow-hidden whitespace-nowrap font-semibold ${isExpanded ? "opacity-100" : "opacity-0"}`}>
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-orange-500">
+      <div className={`p-4 px-0 flex  ${isExpanded ? "justify-start px-4" : "justify-center"} `}>
+        <p className={`flex items-center gap-2 overflow-hidden whitespace-nowrap font-semibold `}>
+          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-orange-500 shrink-0">
             Q
           </div>
-          <span>{isExpanded && "QuickPipe.Ai"}</span>
+          {isExpanded && <span>QuickPipe.Ai</span>}
         </p>
       </div>
 
@@ -47,7 +47,7 @@ function Sidebar() {
                 className={`flex items-center gap-4 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-zinc-800 ${!isExpanded ? "justify-center" : ""}`}
               >
                 <Icon className="h-5 w-5 shrink-0" />
-                <span className={`overflow-hidden whitespace-nowrap transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 w-0"}`}>
+                <span className={`overflow-hidden whitespace-nowrap transition-opacity ${isExpanded ? "opacity-100 block" : "opacity-0 w-0 hidden"}`}>
                   {item.name}
                 </span>
               </Link>
@@ -65,7 +65,7 @@ function Sidebar() {
                 className={`flex items-center gap-4 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-zinc-800 ${!isExpanded ? "justify-center" : ""}`}
               >
                 <Icon className="h-5 w-5 shrink-0" />
-                <span className={`overflow-hidden whitespace-nowrap transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 w-0"}`}>
+                <span className={`overflow-hidden whitespace-nowrap transition-opacity ${isExpanded ? "opacity-100 block" : "opacity-0 w-0 hidden"}`}>
                   {item.name}
                 </span>
               </Link>

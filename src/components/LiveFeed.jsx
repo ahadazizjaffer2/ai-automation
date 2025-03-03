@@ -37,7 +37,7 @@ function LiveFeed() {
         <div key={i} className="flex items-start gap-3">
           <img src={item.avatar || "/placeholder.svg"} alt={item.name} className="h-8 w-8 rounded-full" />
           <div className="flex-1 space-y-1">
-            <div className="flex items-center gap-2">
+            <div className="flex md:items-center md:gap-2 flex-col md:flex-row">
               <span className="font-medium">{item.name}</span>
               <span className="text-xs text-muted-foreground">{item.role}</span>
             </div>

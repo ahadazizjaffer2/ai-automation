@@ -426,7 +426,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="border-b border-gray-200 bg-white w-full flex ">
-        <div className="max-w-9xl mx-auto px-2 ml-16 sm:px-3 lg:px-8 w-full">
+        <div className="max-w-9xl mx-auto px-2 ml-12 md:ml-16 sm:px-3 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             
             {/* Left side - Logo */}
@@ -480,7 +480,7 @@ const Navbar = () => {
                 </button>
 
                 {isNotificationOpen && (
-                  <div className="absolute -right-10 mt-4 bg-white shadow-lg w-80 rounded-lg px-1 py-3 z-10">
+                  <div className="absolute -left-50 mt-4 bg-white shadow-lg w-80 rounded-lg px-1 py-3 z-10">
                     <div className='flex gap-2 items-center p-2'>
                       <button
                         onClick={(e) => {
@@ -669,7 +669,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 absolute top-16 right-40 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 border-none">
+          <div className="md:hidden bg-white border-t border-gray-200 absolute top-16 right-30 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 border-none">
             <ul className='flex flex-col gap-2 p-4 justify-center items-center '>
               <Link to='/'>
                 <li>Home</li>

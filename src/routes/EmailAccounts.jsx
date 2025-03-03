@@ -236,8 +236,8 @@ const EmailAccounts = () => {
       {showAccountsPage ? (
         <AccountsSelectionPage />
       ) : (
-        <div className="bg-white min-h-screen pl-[10px] md:pr-[20px] pt-[10px] md:pt-[35px] text-gray-400 flex flex-col justify-center align-center text-sm">
-          <div className="flex items-center justify-between mb-4 flex-col md:flex-row sm:gap-2">
+        <div className="bg-white min-h-screen pl-[20px] md:pr-[20px] pt-[10px] md:pt-[35px] text-gray-400 flex flex-col justify-center align-center text-sm">
+          <div className="flex items-center justify-between mb-4 flex-col md:flex-row gap-2 mx-5">
             <input
               type="text"
               placeholder="Search..."

@@ -48,7 +48,7 @@ export default function TopPeople() {
         </button>
       </div>
 
-      <div className="mb-6 flex items-center gap-4">
+      <div className="mb-6 flex items-center gap-4 flex-col md:flex-row">
         <div className="relative flex-1">
           <MdSearch className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2" />
           <input

@@ -50,35 +50,35 @@ function StatsChart() {
 
         {/* Text (Appears on Hover) */}
         <div
-          className="absolute left-[110%] opacity-0 translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"
+          className="absolute left-[80%] md:left-[110%] opacity-0 translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"
         >
           <div className="text-2xl font-semibold">2</div>
           <div className="text-sm text-muted-foreground">Replies</div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 text-center">
+      <div className="grid grid-cols-3 md:gap-4 text-center">
         <div>
-          <div className="text-2xl font-semibold">200</div>
+          <div className="text-xl md:text-2xl font-semibold">200</div>
           <div className="text-sm text-muted-foreground">No's. Dialed</div>
         </div>
         <div>
-          <div className="text-2xl font-semibold">1200</div>
+          <div className="text-xl md:text-2xl font-semibold">1200</div>
           <div className="text-sm text-muted-foreground">Emails sent</div>
         </div>
         <div>
-          <div className="text-2xl font-semibold">520</div>
+          <div className="text-xl md:text-2xl font-semibold">520</div>
           <div className="text-sm text-muted-foreground">Replied</div>
         </div>
         <div>
-          <div className="text-2xl font-semibold">30</div>
+          <div className="text-xl md:text-2xl font-semibold">30</div>
           <div className="text-sm text-muted-foreground">Calls Clicked</div>
         </div>
         <div>
-          <div className="text-2xl font-semibold">600</div>
+          <div className="text-xl md:text-2xl font-semibold">600</div>
           <div className="text-sm text-muted-foreground">Opened</div>
         </div>
         <div>
-          <div className="text-2xl font-semibold">10</div>
+          <div className="text-xl md:text-2xl font-semibold">10</div>
           <div className="text-sm text-muted-foreground">Opportunities</div>
         </div>
       </div>
