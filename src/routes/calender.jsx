@@ -111,7 +111,7 @@ function Calendar() {
 
           {/* Calendar days */}
           <div className="border border-gray-300 rounded-lg">
-            <div className="grid grid-cols-2 sm:grid-cols-7">
+            <div className="grid grid-cols-3 sm:grid-cols-7">
               {generateCalendarDays().map((day, index) => (
                 <div
                   onClick={handleModal}

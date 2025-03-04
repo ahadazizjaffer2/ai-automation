@@ -23,8 +23,8 @@ const ContactCard = ({ contact, isSelected, onSelect }) => {
           onChange={onSelect} 
         />
       </div>
-      <img src={profilePic} alt="Profile" className="w-5 h-5 rounded-full mr-4" />
-      <div className="flex-1 grid grid-cols-4 gap-4 text-left">
+      <img src={profilePic} alt="Profile" className="md:w-5 md:h-5 w-6 h-6 rounded-full mr-4" />
+      <div className="flex-1 grid md:grid-cols-4 md:gap-4 text-left">
         <p className="font-medium">{contact.name}</p>
         <p className="text-sm text-gray-500">{contact.company}</p>
         <p className="text-sm text-gray-500">{contact.address}</p>
@@ -57,24 +57,24 @@ export default function ContactList() {
   };
 
   return (
-    <div className="p-6 bg-white min-h-screen flex justify-center flex-col text-sm">
-      <div className="flex justify-between items-center mb-4 flex-col md:flex-row">
+    <div className="p-2 md:p-6 bg-white min-h-screen flex justify-center flex-col text-sm ">
+      <div className="flex justify-between items-center mb-4 flex-col md:flex-row gap-4">
         <input
           type="text"
           placeholder="Search..."
           className="p-2 border border-gray-300 rounded-full w-full md:w-64"
         />
-        <div className="flex items-center space-x-2 md:space-x-4 text-xs">
-          <button className="flex items-center px-2 md:px-4 py-1 md:py-2 border border-gray-300 rounded-full">
+        <div className="flex items-center space-x-2 md:space-x-4 text-xs flex-wrap gap-2">
+          <button className="flex items-center px-3 md:px-6 py-1.5 md:py-3 border border-gray-300 rounded-full">
             <Filter size={16} className="mr-2" /> Filter
           </button>
-          <button className="flex items-center px-2 md:px-4 py-1 md:py-2 border border-gray-300 rounded-full">
+          <button className="flex items-center px-3 md:px-6 py-1.5 md:py-3 border border-gray-300 rounded-full">
             Oldest first <ChevronDown size={16} className="ml-2" />
           </button>
-          <button className="flex items-center px-2 md:px-4 py-1 md:py-2 bg-gradient-to-r from-orange-400 to-green-500 text-white rounded-full">
+          <button className="flex items-center px-3 md:px-6 py-1.5 md:py-3 bg-gradient-to-r from-orange-400 to-green-500 text-white rounded-full">
             <PlusCircle size={16} className="mr-2" /> Get Contacts
           </button>
-          <button className="px-2 md:px-4 py-1 md:py-2 rounded-full text-white" style={{ backgroundColor: "#15A395" }}>
+          <button className="px-3 md:px-6 py-1.5 md:py-3 rounded-full text-white" style={{ backgroundColor: "#15A395" }}>
             Add to campaign
           </button>
         </div>
@@ -82,7 +82,7 @@ export default function ContactList() {
       <div className="flex items-center space-x-2 mb-4">
         <input 
           type="checkbox" 
-          className="w-6 h-6 text-green-500 border-gray-300 rounded-full ml-[30px] mt-[20px] mb-[20px]" 
+          className="md:w-6 md:h-6 h-4 w-4 text-green-500 border-gray-300 rounded-full ml-[10px] md:ml-[30px] my-[10px] md:my-[20px] " 
           checked={selectedAll} 
           onChange={toggleSelectAll} 
         />
