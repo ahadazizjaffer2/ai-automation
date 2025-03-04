@@ -44,7 +44,7 @@ export default function LeadSearch() {
               </button>
             ))}
           </div>
-          <div className="flex items-center bg-white rounded-full shadow-md overflow-hidden justify-between w-full max-w-xl mx-auto border border-gray-200">
+          <div className="flex flex-col md:flex-row items-center bg-white rounded-full shadow-md overflow-hidden justify-between w-full max-w-xl mx-auto border border-gray-200">
             <div className="text-gray-500 ml-4 md:block hidden">
               <FaSearch size={20} />
             </div>
@@ -53,8 +53,8 @@ export default function LeadSearch() {
               placeholder="E.g Engineers in New York in software ..."
               className="px-3 py-3 pl-4 md:pl-3 text-gray-700 focus:outline-none text-sm"
             />
-            <div className="mr-2">
-              <button className="bg-gradient-to-r from-amber-500 to-emerald-600 px-4 py-2 text-white font-semibold text-sm md:text-md rounded-full flex items-center ">
+            <div className="md:mr-2">
+              <button className="bg-gradient-to-r from-amber-500 to-emerald-600 px-4 py-2 text-white font-semibold text-sm md:text-md rounded-full flex items-center w-full">
                 <FaHandSparkles size={16} className="mr-1 md:block hidden" />
                 <span>AI Search</span>
               </button>
