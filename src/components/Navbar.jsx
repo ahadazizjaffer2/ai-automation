@@ -614,7 +614,7 @@ const Navbar = () => {
               </div>
             </div>
             {isModalOpen && (<div className="fixed inset-0 flex items-center justify-center">
-              <div className="bg-white w-96 p-6 rounded-lg shadow-lg modal">
+              <div className="bg-white md:w-96 w-[80%] z-[150] p-6 rounded-lg shadow-lg modal">
                 <div className="flex justify-between items-center">
                   <h2 className="text-lg font-semibold">Create New Workspace</h2>
                   <button onClick={() => setIsModalOpen(false)} className="text-gray-500 hover:text-gray-700">
@@ -649,15 +649,15 @@ const Navbar = () => {
                   />
                 </div>
 
-                <div className="mt-6 flex justify-between">
-                  <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 border rounded-md">
+                <div className="mt-6 flex justify-between gap-1">
+                  <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 border rounded-md text-sm">
                     Cancel
                   </button>
                   <button 
                     onClick={handleCreateWorkspace} 
-                    className="px-4 py-2 bg-teal-500 text-white rounded-md flex items-center"
+                    className="px-4 py-2 bg-teal-500 text-white rounded-md flex items-center text-sm whitespace-nowrap"
                   >
-                    <Briefcase className="w-4 h-4 mr-2" />
+                    <Briefcase className="w-4 h-4 mr-2 md:block hidden" />
                     Create Workspace
                   </button>
                 </div>
