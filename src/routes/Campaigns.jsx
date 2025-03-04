@@ -338,12 +338,12 @@ function App() {
 
       {/* New Campaign Modal */}
       {showNewCampaignModal && (
-        <div className="fixed inset-0 overflow-y-auto z-50 flex items-center justify-center">
+        <div className="fixed inset-0  z-50 flex items-center justify-center">
           {/* Overlay */}
-          <div className="fixed inset-0 bg-opacity-25" onClick={() => setShowNewCampaignModal(false)}></div>
+          {/* <div className="fixed inset-0 bg-opacity-25" onClick={() => setShowNewCampaignModal(false)}></div> */}
           
           {/* Modal */}
-          <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6">
+          <div className="relative bg-white rounded-lg shadow-xl w-[80vw] md:max-w-md p-3 md:p-6">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-semibold text-gray-900">Let's create a new campaign</h3>
               <button 
@@ -369,7 +369,7 @@ function App() {
               />
             </div>
             
-            <div className="flex justify-end space-x-3">
+            <div className="flex justify-center md:justify-end space-x-3">
               <button
                 type="button"
                 className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
