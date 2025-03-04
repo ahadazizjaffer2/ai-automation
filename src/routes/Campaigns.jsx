@@ -117,7 +117,7 @@ function App() {
         {/* Filters and actions */}
         <div className="flex flex-col sm:flex-row justify-between mb-6">
           {/* Search Input */}
-          <div className="relative rounded-md w-full sm:w-64 mb-4 sm:mb-0">
+          <div className="relative rounded-md w-full  mb-4 sm:mb-0">
             <div className="relative flex items-center w-full">
               <Search size={20} className="absolute left-3 text-gray-400" />
               <input
