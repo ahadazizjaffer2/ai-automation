@@ -113,11 +113,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 overflow-hidden">
       {/* Main content */}
-      <main className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="max-w-9xl mx-auto px-4 md:px-6 lg:px-8 py-6">
         {/* Filters and actions */}
-        <div className="flex flex-col sm:flex-row justify-between mb-6">
+        <div className="flex flex-col md:flex-row justify-between mb-6">
           {/* Search Input */}
-          <div className="relative rounded-md w-full  mb-4 sm:mb-0">
+          <div className="rounded-md w-full  mb-4 md:mb-0">
             <div className="relative flex items-center w-full">
               <Search size={20} className="absolute left-3 text-gray-400" />
               <input
@@ -131,8 +131,8 @@ function App() {
           </div>
 
           {/* Filter and Sort Buttons */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <div className="relative w-full sm:w-auto">
+          <div className="relative flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <div className=" w-full ">
               <button
                 type="button"
                 className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
@@ -151,7 +151,7 @@ function App() {
               {/* Status dropdown */}
               {showStatusDropdown && (
                 <div 
-                  className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+                  className="origin-top-right absolute right-0 mt-2 w-36 md:w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
                   onClick={handleDropdownClick}
                 >
                   <div className="py-1">
@@ -170,7 +170,7 @@ function App() {
               )}
             </div>
 
-            <div className="relative w-full sm:w-auto">
+            <div className="relative w-full md:w-auto">
               <button
                 type="button"
                 className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
@@ -189,7 +189,7 @@ function App() {
               {/* Sort dropdown */}
               {showSortDropdown && (
                 <div 
-                  className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+                  className="origin-top-right absolute right-0 mt-2 md:w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
                   onClick={handleDropdownClick}
                 >
                   <div className="py-1">
@@ -211,7 +211,7 @@ function App() {
 
             <button
               type="button"
-              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-500 hover:bg-teal-600 focus:outline-none w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-500 hover:bg-teal-600 focus:outline-none w-full"
               onClick={() => setShowNewCampaignModal(true)}
             >
               <PlusCircle size={18} className="mr-2" />
