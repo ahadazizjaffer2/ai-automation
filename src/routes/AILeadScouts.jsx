@@ -30,32 +30,32 @@ export default function LeadSearch() {
 
       {/* Main Content */}
       <div
-        className="flex justify-center items-center w-full bg-black relative bg-cover bg-center rounded-2xl md:mx-4 p-10 "
+        className="flex justify-center items-center w-full bg-black relative bg-cover bg-center rounded-2xl md:mx-4 md:p-10 "
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="bg-opacity-60 rounded-2xl shadow-lg w-[400px] md:w-[750px] text-center p-10">
+        <div className="bg-opacity-60 rounded-2xl shadow-lg w-full max-w-[400px] md:w-[750px] text-center p-4 md:p-10">
           <h2 className="text-white text-xl md:text-3xl mb-[15px] md:mb-[75px] pb-[15px] md:pb-[30px] mt-[0px]">
             Discover high-value leads with ease
           </h2>
-          <div className="flex flex-wrap justify-center gap-2 mb-6 w-[350px] md:w-[650px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-2 mb-6 w-full max-w-[350px] md:w-[650px] mx-auto">
             {["Sales persons", "Marketing Directors from Sweden", "Chief Executive Officers from Switzerland", "IT managers", "Small business owners in Los Angeles"].map((item, index) => (
               <button key={index} className="px-4 py-3 text-sm bg-gray-500/30 text-white rounded-full shadow my-[10px] mx-[6px]">
                 {item}
               </button>
             ))}
           </div>
-          <div className="flex items-center bg-white rounded-full shadow-md overflow-hidden justify-center w-full max-w-xl mx-auto border border-gray-200">
-            <div className="text-gray-500 ml-4">
+          <div className="flex items-center bg-white rounded-full shadow-md overflow-hidden justify-between w-full max-w-xl mx-auto border border-gray-200">
+            <div className="text-gray-500 ml-4 md:block hidden">
               <FaSearch size={20} />
             </div>
             <input
               type="text"
               placeholder="E.g Engineers in New York in software ..."
-              className="px-3 py-3 text-gray-700 focus:outline-none text-sm"
+              className="px-3 py-3 pl-4 md:pl-3 text-gray-700 focus:outline-none text-sm"
             />
             <div className="mr-2">
-              <button className="bg-gradient-to-r from-amber-500 to-emerald-600 px-6 py-2 text-white font-semibold text-sm md:text-md rounded-full flex items-center space-x-2">
-                <FaHandSparkles size={16} className="mr-1" />
+              <button className="bg-gradient-to-r from-amber-500 to-emerald-600 px-4 py-2 text-white font-semibold text-sm md:text-md rounded-full flex items-center ">
+                <FaHandSparkles size={16} className="mr-1 md:block hidden" />
                 <span>AI Search</span>
               </button>
             </div>
